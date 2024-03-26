@@ -7,3 +7,5 @@
 /CodeScan/obj/Release/net8.0
 /CodeScan1/.vs/CodeScan1
 /.vs
+/bin/Debug/net8.0
+/obj

@@ -34,9 +34,9 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
 
     - name: Restore NuGet packages
-      working-directory: ${{env.GITHUB_WORKSPACE}}
+      working-directory: $GITHUB_WORKSPACE
       run: |
-        echo 'the workspace is ${{env.GITHUB_WORKSPACE}}'
+        echo 'the workspace is $GITHUB_WORKSPACE'
         nuget restore ${{env.SOLUTION_FILE_PATH}}
     - name: Set up JDK 17
       uses: actions/setup-java@v3
